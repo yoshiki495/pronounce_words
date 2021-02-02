@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel = "stylesheet" href="stylesheet.css">
+    <title>speaking_english</title>
+    <script type="text/javascript">
+
+    function readjson(){
+      const fs = require('fs');
+      const jsonObject = JSON.parse(fs.readFileSync('words/gold_phrase.json', 'utf8'));
+      var list = jsonObject.questionList;
+      return list
+    }
+
+    function pronounce(word) {
+      let u = new SpeechSynthesisUtterance();
+      u.lang = 'en-US';
+      u.text = word;
+      speechSynthesis.speak(u);
+    }
+
+    function putword(){
+      readjson();
+      var num = Math.floor(Math.random()*9);
+      var word = list[num].question
+      function pronounce(word) {
+        let u = new SpeechSynthesisUtterance();
+        u.lang = 'en-US';
+        u.text = word;
+        speechSynthesis.speak(u);
+      }
+      document.getElementById("table").value = word;
+      pronounce(word);
+    }
+
+    function stoptest(){
+      ckearInterval(PassageID);
+    }
+    </script>
+  </head>
+  <body>
+    <p>音声を確認したい単語を入力してください。</p>
+    <input type="text" id="word">
+    <button id="pronounce" onclick="pronounce()">発音を確認</button>
+    <button id="next" onclick="putword()">Next</button>
+    <div>
+      <h1><input id="table" type="text"></h1>
+    </div>
+  </body>
+</html>

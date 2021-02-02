@@ -1,0 +1,54 @@
+{
+    "questionList": [
+        {
+            "no": 1,
+            "question": "refrigerator",
+            "answer": "冷蔵庫"
+        },
+        {
+            "no": 2,
+            "question": "microwave oven",
+            "answer": "電子レンジ"
+        }
+        {
+            "no": 3,
+            "question": "stove",
+            "answer": "コンロ"
+        },
+        {
+            "no": 4,
+            "question": "air conditioner",
+            "answer": "エアコン"
+        },
+        {
+            "no": 5,
+            "question": "heater",
+            "answer": "暖房、ストーブ"
+        },
+        {
+            "no": 6,
+            "question": "vacuum cleaner",
+            "answer": "掃除機"
+        },
+        {
+            "no": 7,
+            "question": "washing machine",
+            "answer": "洗濯機"
+        },
+        {
+            "no": 8,
+            "question": "light bulb",
+            "answer": "冷蔵庫"
+        },
+        {
+            "no": 9,
+            "question": "bookcase",
+            "answer": "本棚"
+        },
+        {
+            "no": 10,
+            "question": "bookshelf",
+            "answer": "本棚"
+        }
+    ]
+}
